@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 163px;
+            width: 282px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1 style="color: #FFFFFF; background-color: #000000; height: 235px;">
+        <img class="style1" src="10.jpg" /><strong>Climate Change</strong>
+        <div 
+            style="font-family: 'Times New Roman', Times, serif; font-size: medium;color: #FFFFFF; background-color: #000000;">
+            <p style="margin-top: 0px" 
+           >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apllications of AI to fight climate change.</p>
+        </div></h1>
+       
+    </div>
+        
+            <asp:Menu ID="Menu1" runat="server" BackColor="#B5C7DE" 
+                DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                ForeColor="#284E98" Orientation="Horizontal" 
+        StaticSubMenuIndent="10px" Width="100%">
+                <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#B5C7DE" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/home.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                    <asp:MenuItem Text="APPLICATIONS" Value="APPLICATIONS">
+                        <asp:MenuItem NavigateUrl="~/Electrical.aspx" Text="Electricity Systems" Value="Electricity Systems">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Transport.aspx" Text="Transportation" Value="Transportation">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Cities.aspx" Text="Buildings &amp; Cities" Value="Buildings &amp; Cities">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Forecast.aspx" Text="Climate Prediction" Value="Climate Prediction">
+                        </asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="CONTACT US" Value="CONTACT US">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/About.aspx" Text="ABOUT US" Value="ABOUT US">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="https://docs.google.com/forms/d/e/1FAIpQLScYGJsq5RmoeZRLKeW1xOEAzh5c9W2IS-c5AS-eZIPfcJvY0g/viewform" 
+                        Text="FEEDBACK " Value="FEEDBACK">
+                    </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#284E98" Font-Bold="False" ForeColor="#66CCFF" />
+        <StaticMenuItemStyle HorizontalPadding="50px" ItemSpacing="20px" 
+            VerticalPadding="2px" />
+        <StaticMenuStyle HorizontalPadding="60px" VerticalPadding="1px" />
+        <StaticSelectedStyle BackColor="#507CD1" HorizontalPadding="5px" 
+            VerticalPadding="5px" />
+            </asp:Menu>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+    
+</body>
+</html>

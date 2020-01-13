@@ -1,0 +1,20 @@
+﻿body {
+}
+.newStyle3
+{
+    font-family: Courier;
+    font-size: larger;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #FFFFFF;
+}
+.newStyle4
+{
+    font-family: Verdana;
+    font-size: xx-large;
+    font-weight: 600;
+    text-transform: none;
+    color: #FFFFFF;
+}
